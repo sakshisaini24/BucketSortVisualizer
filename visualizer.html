@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="visual.css" />
+    <title>Bucket Sort</title>
+</head>
+
+<body>
+    <br/>
+    <p class="header">Bucket Sort Visualizer</p>
+    <button class="gen" onclick="generatearray()">Click here to Generate Array</button>
+    <div id="array"></div>
+    <br/>
+    <br/>
+    <div style="display: flex; justify-content: space-evenly">
+        <div class="bucket">
+            <div id="one" class="bucket2"></div>
+            <br/>
+            <h3 style="text-align: center">[1-5]</h3>
+        </div>
+
+        <div class="bucket">
+            <div id="two" class="bucket2"></div>
+            <br/>
+            <h3 style="text-align: center">[6-10]</h3>
+        </div>
+
+        <div class="bucket">
+            <div id="three" class="bucket2"></div>
+            <br/>
+            <h3 style="text-align: center">[11-15]</h3>
+        </div>
+        
+        <div class="bucket">
+            <div id="four" class="bucket2"></div>
+            <br/>
+            <h3 style="text-align: center">[16-20]</h3>
+        </div>
+    </div>
+    <button class="csort" onclick="CountingSort()">Sort Now</button>
+    <script src="vis.js"></script>
+</body>
+
+</html>

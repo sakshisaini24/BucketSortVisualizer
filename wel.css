@@ -1,0 +1,44 @@
+body{
+    font: normal 50px 'Cookie', cursive;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+h3{
+    color: black;
+    text-align: center;
+}
+
+button{
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 25px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font: normal 50px 'Cookie', cursive;
+    color: white;
+    background-color: #f749c2;
+}
+
+
+button:hover{
+    background-color: #f9aece;
+    color: white;
+    transition: 0.7s;
+}
