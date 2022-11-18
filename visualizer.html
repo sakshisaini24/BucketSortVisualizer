@@ -13,7 +13,7 @@
 <body>
     <br/>
     <p class="header">Bucket Sort Visualizer</p>
-    <button class="gen" onclick="generatearray()">Click here to Generate Array</button>
+    <button class="gen" onclick="update_array_size(); this.disabled= true;">Click here to Generate Array</button>
     <div id="array"></div>
     <br/>
     <br/>
@@ -42,7 +42,8 @@
             <h3 style="text-align: center">[16-20]</h3>
         </div>
     </div>
-    <button class="csort" onclick="CountingSort()">Sort Now</button>
+    <button class="csort" onclick="countSort(); this.disabled = true;">Sort Now</button>
+    <button class="regenerate" onclick="re()">Regenerate</button>
     <script src="vis.js"></script>
 </body>
 

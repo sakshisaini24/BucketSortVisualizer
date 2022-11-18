@@ -31,7 +31,7 @@ button{
     font: normal 25px 'Cookie', cursive;
     background-color: #f749c2;
     top: 13%;
-    left: 50%;
+    left: 20%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
@@ -45,7 +45,7 @@ button{
 .csort{
     font: normal 25px 'Cookie', cursive;
     background-color: #f749c2;
-    top: 60%;
+    top: 13%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -57,6 +57,20 @@ button{
   transition: 0.7s;
 }
 
+.regenerate{
+  font: normal 25px 'Cookie', cursive;
+  background-color: #f749c2;
+  top: 13%;
+  left: 80%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.regenerate:hover{
+background-color: #f9aece;
+color: white;
+transition: 0.7s;
+}
 #array {
     height: 265px;
     width: 598px;

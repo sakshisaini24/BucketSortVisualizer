@@ -1,5 +1,8 @@
 
 var container = document.getElementById("array");
+var btn1= document.getElementById("gen");
+var btn2= document.getElementById("csort");
+var btn3= document.getElementById("regenerate");
 
 function shuffle(arr) {
   for (var i = arr.length - 1; i > 0; i--) {
@@ -11,9 +14,7 @@ function shuffle(arr) {
 }
 
 function generatearray() {
-
   var arr = [];
-
   for (var i = 0; i < 20; i++) {
     arr.push(i + 1);
   }
@@ -33,6 +34,10 @@ function generatearray() {
     array_ele.appendChild(array_ele_label);
     container.appendChild(array_ele);
   }
+}
+function update_array_size()
+{
+    generatearray();
 }
 
 async function InsertionSort(clsnam, delay = 600) {
@@ -156,7 +161,7 @@ async function InsertionSort(clsnam, delay = 600) {
     if (i == 3) block_idx = 
     document.getElementsByClassName("fourthbucket");
     for (var j = i * 5; j < 5 * (i + 1); j++, bucket_idx++) {
-      block_idx[bucket_idx].style.backgroundColor = "red";
+      block_idx[bucket_idx].style.backgroundColor = "magenta";
       await new Promise((resolve) =>
         setTimeout(() => {
           resolve();
@@ -167,7 +172,7 @@ async function InsertionSort(clsnam, delay = 600) {
       block_idx[bucket_idx].style.height;
       blocks[j].childNodes[0].innerText =
         block_idx[bucket_idx].childNodes[0].innerText;
-      blocks[j].style.backgroundColor = "green";
+      blocks[j].style.backgroundColor = "magenta";
 
       await new Promise((resolve) =>
         setTimeout(() => {
@@ -176,7 +181,14 @@ async function InsertionSort(clsnam, delay = 600) {
       );
 
       block_idx[bucket_idx]
-      .style.backgroundColor = "#6b5b95";
+      .style.backgroundColor = "magenta";
     }
   }
 }
+
+ function countSort(){
+  CountingSort();
+}
+ function re(){
+  window.location.reload();
+ }
